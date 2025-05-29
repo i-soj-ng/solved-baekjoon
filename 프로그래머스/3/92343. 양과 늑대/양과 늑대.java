@@ -21,11 +21,9 @@ class Solution {
                 } else {
                     maxSheep = Math.max(maxSheep, dfs(info, edges, visited, sheep, wolf + 1));
                 }
-                
                 visited[child] = false;
             }
         }
-        
         return maxSheep;
     }
 }
