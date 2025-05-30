@@ -23,13 +23,11 @@ class Solution {
         
         for (int i = 0; i < id_list.length; i++) {
             String reporter = id_list[i];
-            
             for (String reportee : iReportWho.getOrDefault(reporter, new ArrayList<>())) {
                 if (reportCount.get(reportee) >= k) {
                     answer[i] += 1;
                 }
             }
-                
         }
         
         return answer;
