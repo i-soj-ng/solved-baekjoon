@@ -14,6 +14,7 @@ class Solution {
         for (int[] edge : edges) {
             final int parent = edge[0];
             final int child = edge[1];
+            
             if (visited[parent] && !visited[child]) {
                 visited[child] = true;
                 if (info[child] == 0) {
