@@ -36,7 +36,5 @@ function solution(maps) {
             queue.push([nx, ny, distance + 1]);
         }
     }
-    
-    if (queue[queue.length - 1][0] !== n && queue[queue.length - 1][1] !== m)
-        return -1;
+    return -1;
 }
