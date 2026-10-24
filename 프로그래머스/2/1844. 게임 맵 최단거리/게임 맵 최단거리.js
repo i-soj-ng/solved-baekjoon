@@ -2,7 +2,7 @@ function solution(maps) {
     const n = maps.length;
     const m = maps[0].length;
     
-    const visited = Array.from({ length: n }, () => Array(m).fill(false));
+    const visited = Array.from({ length: n }, () => Array(m).fill(false))
     
     const directions = [
         [-1, 0],
@@ -11,7 +11,7 @@ function solution(maps) {
         [0, 1]
     ];
     
-    const queue = [[0, 0, 1]]; // 시작위치 저장
+    const queue = [[0, 0, 1]];
     let head = 0;
     
     visited[0][0] = true;
