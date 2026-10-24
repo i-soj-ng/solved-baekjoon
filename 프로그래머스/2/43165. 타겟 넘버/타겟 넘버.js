@@ -1,5 +1,5 @@
 function solution(numbers, target) {
-    var answer = 0;
+    let answer = 0;
     
     function dfs(index, sum) {
         if (index === numbers.length) {
@@ -9,7 +9,7 @@ function solution(numbers, target) {
             return;
         }
         
-        dfs(index + 1, sum + numbers[index]); 
+        dfs(index + 1, sum + numbers[index]);
         dfs(index + 1, sum - numbers[index]);
     }
     
